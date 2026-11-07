@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Differentiated Worksheets — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html">Plan Your Year</a>
+<a href="03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html" class="active">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Differentiated Worksheets</h1>
+<p><em>Summary: turn one lesson into three worksheets — below level, on level, above level — in about 10 minutes with a structured prompt. Time to do: 10 minutes per lesson per subject per level.</em></p>
+<h2>The idea in one sentence</h2>
+<p>The same material, rendered at different reading levels, so a 7-year-old and a 12-year-old — or one confident reader and one dyslexic reader — can sit at one table and work on one topic, each with a sheet that doesn't talk down to them and doesn't overwhelm them.</p>
+<h2>Reading levels, briefly</h2>
+<p>Grade levels are a shorthand, not a diagnosis. When you tell a model "3rd grade reading level," it doesn't mean the label matches your kid. So the prompt below works in <strong>descriptors</strong>, not grades — read these and pick by word count and vocabulary complexity:</p>
+<table><thead><tr>
+<th>Band you might say</th>
+<th>Looks like</th>
+<th>Typical features</th>
+</tr></thead><tbody>
+<tr>
+<td>Emerging reader</td>
+<td>read-aloud, big font, short lines</td>
+<td>6–10 word sentences; one idea per line; no defining-vocabulary homework</td>
+</tr>
+<tr>
+<td>Decoding comfortably</td>
+<td>short instructions, familiar words</td>
+<td>10–14 word sentences; one style of question per section</td>
+</tr>
+<tr>
+<td>Confident reader</td>
+<td>full sentences, richer vocab</td>
+<td>14–20 word sentences; sequencing, why-questions</td>
+</tr>
+<tr>
+<td>Advanced</td>
+<td>dense text, inferential work</td>
+<td>primary-source quotes, "compare," "evaluate"</td>
+</tr>
+</tbody></table>
+<p>The rewrite model is <em>good</em> at this — better than most teachers have time for — and <em>bad</em> at judging which band your kid is at, so that judgment stays yours.</p>
+<h2>The worksheet workflow</h2>
+<p><strong>Step 1.</strong> Pick the lesson and the <em>same content</em> for all levels. If the sheet is about why leaves change color, every kid answers questions about leaves changing color — not different topics.</p>
+<p><strong>Step 2.</strong> Use the prompt in <a href="prompts/worksheet-three-levels.html">prompts/worksheet-three-levels.md</a>. It takes your lesson text, the number of questions, and the level descriptors, and emits three worksheets plus a short note on <em>what changed</em> between them. The note matters: you should be able to glance at it and know they're the same lesson.</p>
+<p><strong>Step 3.</strong> Sanity-check each sheet:</p>
+<ul>
+<li><strong>Emerging reader sheet:</strong> Is the vocabulary actually simple? Wrong-answer section still correct? (No "ambiguously right" answers.)
+</li>
+<li><strong>On level:</strong> Does it ask real questions, not fill-in-the-blank trivia?
+</li>
+<li><strong>Above level:</strong> Does it have an inferential question (why/compare), not just harder vocabulary with the same recall answer?
+</li>
+</ul>
+<p><strong>Step 4.</strong> Good worksheets need good <strong>answer keys</strong>. Ask the AI for one simultaneously — it's the easiest add-on, and it's what your tired 5 p.m. self will thank you for.</p>
+<p><strong>Step 5 (single passages).</strong> For one-off text — a paragraph from your spine book, an explanation that landed badly, a letter for co-op adults with mixed reading levels — use the rewrite prompt instead: <a href="prompts/rewrite-reading-level.html">prompts/rewrite-reading-level.md</a>. Same rules, one passage, plus a what-changed note you check against your original.</p>
+<h2>Formatting choices that matter more than they sound like they might</h2>
+<ul>
+<li><strong>Font.</strong> Larger font w/ sans-serif (Arial or Verdana or APHont) helps a lot for emerging and dyslexic readers. Sites have templates; print styles matter for worksheets you'll reuse.
+</li>
+<li><strong>White space.</strong> Ask for "generous line spacing, no more than 5 questions per page" for the emerging band — the model tends to overpack.
+</li>
+<li><strong>Answer format variety.</strong> Kids hate 12 blanks in a row. Ask for one drawing task, one matching, one short sentence — variety keeps attention.
+</li>
+<li><strong>Avoid handwriting-heavy tasks in the emerging band</strong> unless writing IS the lesson goal. Oral answers, circling, matching, drawing.
+</li>
+</ul>
+<h2>Ethics of AI-generated kid materials</h2>
+<p>Your kid's time is your kid's real cost. Every AI worksheet that reaches them should have been either fact-checked (chapter 05) or been about opinion-free process work (math operations with correct answers you've spot-checked, handwriting, summarizing their own reading). This sounds heavy but is a quick glance — and it protects against things like the wrong kinetic-molecular explanation quietly becoming your false history of ice melting.</p>
+<h2>Sibling-proofing</h2>
+<p>One trap: generated sheets sometimes reveal the answer in a sibling's sheet level's wording. Ask, "check these three worksheets so no easy sheet contains the exact phrasing that would be an answer on the harder sheet." Cheap to request; the models catch most of it.</p>
+<hr>
+<p>Next: <a href="05-fact-check-everything.html">Chapter 05 — Fact-Check Everything</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

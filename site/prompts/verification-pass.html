@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt: Verification Pass — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="../index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="../00-start-here.html">Start Here</a>
+<a href="../01-principles.html">Principles</a>
+<a href="../02-plan-your-year.html">Plan Your Year</a>
+<a href="../03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="../04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="../05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="../06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="../07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="../08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="../09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="../10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="../prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="../prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="../prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="../prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="../prompts/verification-pass.html" class="active">Prompt: Verification Pass</a>
+<a href="../prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="../prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="../prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="../templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="../templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="../templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="../templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="../templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Prompt: Verification Pass</h1>
+<p><em>Category: quality · Use: before printing or teaching anything factual · Pairs with: chapter 05.</em></p>
+<h2>Why this prompt exists</h2>
+<p>It converts "trust the confident text" into "verify a short list" — which is a 2-minute job instead of an anxiety spiral. It does NOT verify anything for you: it <em>extracts</em> the claims so you can check them against real sources.</p>
+<h2>Paste this prompt (run BEFORE materials generation for new topics)</h2>
+<pre><code>Here is content I&#x27;m considering teaching. Do NOT expand or &quot;fix&quot; it.
+
+[PASTE THE DRAFT TEXT OR YOUR TOPIC OUTLINE]
+
+Your job:
+1. List every factual claim contained in or implied by this text: names,
+   dates, numbers, quotes, causes, &quot;how X works&quot; mechanisms. Number them.
+2. For each, say your confidence: [near-certain] [likely] [uncertain]
+   [often-confused-with-something-else].
+3. For the often-confused ones, name the thing it&#x27;s commonly confused with,
+   so I know what to check against.
+4. List the TWO claims that would most damage this lesson if wrong. Those
+   are my priority checks.
+5. Name any claim that references something time-sensitive (prices,
+   websites, current events, laws) — flag it as [DOES NOT AGE WELL].
+6. Do not add new facts. Do not smooth over uncertainty. If you don&#x27;t
+   know, write &quot;I don&#x27;t know&quot; — that answer is genuinely helpful here.</code></pre>
+<h2>Then: the two paths (chapter 05 details)</h2>
+<ul>
+<li><strong>Fast path today:</strong> prioritize items from step 4 (two most damaging) plus every "often-confused" one. Real source — encyclopedia, your spine book, .gov/museum site. Two minutes. Fix, footer the sheet.
+</li>
+<li><strong>Thorough path new-topic weeks:</strong> check <em>sources</em> named in step 2 (fake sources are easier to spot than fake facts), then generate materials only after that pass.
+</li>
+</ul>
+<h2>Companion mini-prompts</h2>
+<ul>
+<li><strong>Claim harvester re-run:</strong> "New version pasted below — list ONLY claims that differ from the last version." (Catches model drift between passes.)
+</li>
+<li><strong>Source oracle:</strong> "Name the source you're drawing each claim from. If you cannot name one, say so." Unsourced + confident is exactly the pattern worth pausing on.
+</li>
+</ul>
+<h2>What NOT to do with this prompt</h2>
+<ul>
+<li>Don't ask it "so was everything correct?" — the answer will be yes, every time, which is exactly the failure mode this prompt exists to route around.
+</li>
+<li>Don't let it "verify" by summarizing web pages you haven't opened. You are the verifier. It is the extractor.
+</li>
+</ul>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

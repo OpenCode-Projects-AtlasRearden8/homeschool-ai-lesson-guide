@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy and Local AI — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html">Plan Your Year</a>
+<a href="03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html" class="active">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Privacy and Local AI</h1>
+<p><em>Summary: what never goes into a cloud prompt, plus a realistic look at running AI on your own machine. Time to do: 10 minutes reading; local setup optional and its own evening project.</em></p>
+<h2>The rule that keeps showing up</h2>
+<p>A chat message sent to a cloud AI service is, from a privacy standpoint, a message sent to a company you don't control, possibly retained, possibly reviewed. Whether that's fine depends on what's in it. So here's the household rule this guide builds everything else on:</p>
+<p><strong>Kid names, health details, diagnoses, custody, finances, addresses — none of that goes into a prompt.</strong> Not for state paperwork questions (chapter 07), not for "why is my kid melting down over math" — none of it.</p>
+<p>You don't need any of it to get good planning help. The model honestly teaches better when you <em>don't</em> dump family drama into the prompt: describe the <em>teaching situation</em>, not the child's identity.</p>
+<h2>"But I use initials" and similar comfort</h2>
+<p>Describing your kid by pseudonym works fine for planning prompts, and it's what this guide's prompt library models. Two cautions:</p>
+<ol>
+<li><strong>Details combine.</strong> "9-year-old girl, county fair chess champion, hates handwriting" is a recognizable child to anyone who knows her. Ask yourself whether each detail actually serves the planning at all. Usually three details are enough, and usually the most distinctive one is the one you don't need.
+</li>
+<li><strong>Health and diagnosis details.</strong> For accommodations help, describe the
+</li>
+</ol>
+<p><em>accommodation need</em>, not the condition or evaluation history: "needs extended time and low-pressure output" is privacy-safe, plenty for worksheet generation, and yours to decide how to explain to AI.</p>
+<h2>Local AI: the honest version</h2>
+<p>Running a model on your own machine removes the "sent to a company" concern entirely. It's a real option in 2026 and worth considering if privacy matters to you a lot — but it has costs, and this page prefers honesty over hype:</p>
+<table><thead><tr>
+<th></th>
+<th>Cloud AI (free or paid)</th>
+<th>Local AI on your machine</th>
+</tr></thead><tbody>
+<tr>
+<td>Setup</td>
+<td>none</td>
+<td>an evening (download a 4–8 GB model, an app, GUI)</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>usually top-tier</td>
+<td>good for planning/rewriting; weaker on the hardest reasoning</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>fast</td>
+<td>depends on your hardware; slow on old laptops</td>
+</tr>
+<tr>
+<td>Privacy</td>
+<td>the company's policy applies</td>
+<td>stays on the machine, essentially</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>free tiers exist; paid tier for heavy use</td>
+<td>free after hardware you may already own</td>
+</tr>
+</tbody></table>
+<p><strong>Practical guidance:</strong> start on cloud with the privacy rules above. If you find yourself carefully pre-redacting every prompt — that's a sign local AI is worth one evening. Tools in this space change fast; the current leading free apps run models like the small Llama/Mistral/others family — search "run a local LLM on Windows/Mac 2026" rather than trusting this page's year-old links. The manual's sibling projects cover local setup in detail.</p>
+<p>Great local-uses for this workflow: rewriting worksheets at reading levels (chapter 04), brainstorming quiet-day variants, drafting portfolio summaries from your own log files, anything you'd paste kid detail into.</p>
+<p>Bad fits: heavy fact-check pipeline (local models hallucinate at <em>least</em> as often as cloud ones), anything requiring up-to-the-minute info.</p>
+<h2>Files and folders: keep them, back them up</h2>
+<p>Whole-family school records are some of the most important data you own. Two cheap habits:</p>
+<ul>
+<li><strong>Back up <code>records/</code> to a second medium</strong> (external drive, or a private cloud folder you control). Once a month is plenty.
+</li>
+<li><strong>Keep photos of kid work out of the AI</strong> unless they're truly anonymous (a math worksheet is fine; a photo of your kid's face with their name visible is a "not to cloud" item).
+</li>
+</ul>
+<h2>A word on accounts</h2>
+<p>Prefer a dedicated account email you don't tie to your main identity if the tool allows it; turn off "improve the model for everyone"/chat-training toggles if the service offers the setting; and never paste documents containing other people's kids (co-op rosters, co-op emails, other families' IEPs) into any AI, cloud or not. The consent you'd want for your kid's data is the consent you extend to theirs.</p>
+<hr>
+<p>Next: <a href="09-low-energy-and-accommodations.html">Chapter 09 — Low Energy and Accommodations</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

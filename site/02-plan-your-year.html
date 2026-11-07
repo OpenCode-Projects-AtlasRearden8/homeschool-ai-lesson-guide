@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan Your Year — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html" class="active">Plan Your Year</a>
+<a href="03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Plan Your Year</h1>
+<p><em>Summary: build a 36-week plan from your subject list, your curriculum, and your real constraints — using the AI as a structuring partner, not an oracle. Time to do: about 60–90 minutes, once per year.</em></p>
+<h2>What a year plan is (and isn't)</h2>
+<p>A year plan is a map at the week level. Not day-by-day — that's the weekly loop's job (chapter 03). It answers: which topics, roughly which weeks, where the natural break points are, and where the padding goes when life happens.</p>
+<p>It does <em>not</em> answer what your state requires. Do that lookup first — chapter 07 — because some states require specific hours, subjects, or assessments, and your year plan should inherit those constraints from the start.</p>
+<h2>Before you prompt: gather five facts</h2>
+<p>Write these down in a scratch note (or the year plan template). These are the "constraints" every good prompt in this guide assumes you gather first:</p>
+<ol>
+<li><strong>Kids and rough levels.</strong> For each: age/grade-ish level and one thing you want them to gain this year. Use ordinal descriptions ("reading confidently at 3rd-grade level, resistant writer").
+</li>
+<li><strong>Subject list.</strong> Both required-by-state and chosen-by-you. Separate them; some states require certain subjects explicitly.
+</li>
+<li><strong>Curriculum anchors.</strong> What you already own or chose — e.g., "Saxon Math 4", "Story of the World Vol. 2", library-based science.
+</li>
+<li><strong>Your calendar reality.</strong> Start date, holiday weeks, travel weeks, chairs — er, seasons you know are bad (post-illness, family emergencies). Add buffer weeks <em>on purpose</em>, at the end and mid-year.
+</li>
+<li><strong>Your energy pattern.</strong> When do you plan? When are your kids sharp? Morning-deep or afternoon-shallow matters for schedule shape.
+</li>
+</ol>
+<h2>The year-plan prompt</h2>
+<p>The prompt library has the full version (see <a href="prompts/year-plan.html">prompts/year-plan.md</a>). The shape, in one paragraph:</p>
+<p>Give the model each of the five facts above, then ask for a <strong>week-by-week table with 36 rows</strong>: week number, focus topic per subject, milestones, and buffer/assessment weeks marked. Then — this is the part people skip — ask it to <strong>identify risks</strong>: "which weeks look unrealistic for a sick day plus a toddler?" and to <strong>propose two alternative shapes</strong> (front-loaded vs. spray-across-the-year), so you pick a shape rather than accept the first one.</p>
+<h2>What a good result looks like</h2>
+<ul>
+<li>36 rows, one per week, with one focus topic per subject per week
+</li>
+<li>Real break weeks marked and <em>honorable</em> — not crumbs at the end
+</li>
+<li>Assessment or portfolio weeks marked for those states and for chapter 06
+</li>
+<li>A short risks section the model actually flagged (e.g., "weeks 18–19 fall during winter illness season — consider lighter load")
+</li>
+<li>Subjects your state requires, present every week they should be
+</li>
+</ul>
+<h2>What to fix by hand, every time</h2>
+<p>The model doesn't know these things; <em>you</em> do, so edit them in:</p>
+<ul>
+<li><strong>Readers' pace.</strong> If your kid reads slower than a syllabus assumes, stretch the reading plan across more weeks. Weeks are cheap to move in the plan.
+</li>
+<li><strong>Bad calendar weeks.</strong> You know your family's rhythms; the model knows only what you typed.
+</li>
+<li><strong>Volume.</strong> If a week has three major lessons in four subjects, something is wrong for most real kids. Cut it in half. Cutting is easier than catching up.
+</li>
+</ul>
+<h2>Common failure to sidestep</h2>
+<p>The classic model answer is "180 days, 4 quarters, evenly split." Evenly split is <em>plausible</em>, not <em>good</em>. If you get that shape, ask it to redo it in the shape you actually picked (front-loaded science, seasonal history units, etc.). A second pass with explicit constraints is where plans stop looking generated.</p>
+<h2>Handoff to the weekly loop</h2>
+<p>Once the year plan exists in your own folder (Save it as <code>year-plan.md</code> from the template — never only inside a chat browser), each week's work is small. Open your plan, find next week's row, and pull this week's <em>detail</em> using the weekly loop in chapter 03. The plan never tells you <em>how</em> to teach Wednesday; it just makes sure Wednesday has a purpose.</p>
+<hr>
+<p>Next: <a href="03-the-weekly-loop.html">Chapter 03 — The Weekly Loop</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

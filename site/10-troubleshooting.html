@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html">Plan Your Year</a>
+<a href="03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html" class="active">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Troubleshooting</h1>
+<p><em>Summary: the ten failure patterns you'll actually hit, and the fastest honest fix for each. Bookmark this one.</em></p>
+<h2>1. "Everything it generates sounds the same"</h2>
+<p>Generic output is a context problem, not a model problem. Your prompt needs three more specifics it doesn't have: your kid's actual interests, the materials you own, and a length constraint. "Use my kids' current obsession (nail polish/forestry/Bluey) as an example in at least one item" works shockingly well.</p>
+<h2>2. "It keeps giving me classroom-seat-time plans"</h2>
+<p>Because most of its training data is classroom. Correct it once, explicitly: "In our home school we do 3 hours a day, mixed ages at one table, no transitions, no 25-student group work." The model adapts immediately — this is a one-paragraph fix per prompt, or saved as a "preamble" you reuse (the prompt library files in <a href="prompts/">prompts/</a> each contain one ready-made).</p>
+<h2>3. "A fact on today's worksheet is wrong"</h2>
+<p>Good catch — that's chapter 05 doing its job. Fix the sheet, and <em>write the correction in your <code>fact-checks.md</code> with the correct date/name</em>, so the fixed version gets used next time you regenerate the unit.</p>
+<h2>4. "The reading level came out wrong — too hard"</h2>
+<p>Two reliable moves: (1) ask for shorter sentences and 100 fewer unique words; (2) ask it to "explain the same content to someone reading it aloud to a listener who can stop and ask questions." Reading level is measurable; ask the model to report its sentence-length average if it can, and compare against your kid's real tolerance.</p>
+<h2>5. "My kid names it 'Siri-for-school' and refuses"</h2>
+<p>Rebrand. The AI is your planning tool, not an in-lesson presence. If your kid does interact with it (asking questions), set rules like "AI is for finding sources, then we check them" — that habit <em>is</em> chapter 05, taught early, and it's a genuinely good life skill.</p>
+<h2>6. "I fell a whole unit behind"</h2>
+<p>Chapter 03's slide-the-plan move, done once, is fifteen minutes and fixes the vibe immediately. Do <em>not</em> try to double-up lessons to "catch up" — doubling is how plans die in winter. If behind by a lot, use the AI to compress: "here's the rest of this unit's plan and my honest remaining weeks; propose what to cut and what to keep."</p>
+<h2>7. "It wrote a worksheet whose answer key is wrong"</h2>
+<p>This happens with generated math word problems more than anyone admits. Spot-check keys before Monday when the topic is arithmetic; if the key is wrong, fix it yourself, log it in fact-checks.md, and consider regenerating the whole sheet — broken keys mean the model was confused the whole way through.</p>
+<h2>8. "My records folder is chaos"</h2>
+<p>One-time triage day (30 min): archive everything not current into an <code>archive-YYYY/</code> subfolder; keep this year's <code>records/2026-2027/</code> clean. Then make the ritual stricter: Move 4 of the weekly loop exists precisely so chaos can't re-form. If paperwork from the state is mixed in, chapter 06's correspondence folder is its home.</p>
+<h2>9. "I'm drowning in open browser tabs with lesson ideas"</h2>
+<p>Give tabs to the AI: "for each link I paste, summarize in one sentence and file under subject." Then close the tabs. Lessons don't need to live in tabs; they need to live in your weekly loop's queue. Ten pasted links, ten sentences, one organized note, tabs closed, sleep.</p>
+<h2>10. "I don't trust any of it anymore"</h2>
+<p>Totally normal, and chapter 05's triage table is built exactly for the aftermath of discovering an error. The trust calibration to aim for: use generated material freely for <em>structure</em> (outlines, instructions, formats, prompts-for-self) and treat every <em>fact</em> as a rumor until you've seen a source. That calibration is what the whole guide teaches — and after a month it's as automatic as checking a receipt.</p>
+<h2>Still stuck?</h2>
+<ul>
+<li>Re-read the chapter for the area that's failing — each one ends with its failure <em>and</em> its fix built in.
+</li>
+<li>Check the prompt you actually pasted. Most "the AI can't do this" moments are "the prompt had no context" moments.
+</li>
+<li>The issues page of this project's repository exists for guide bugs; real classroom additions are welcome.
+</li>
+</ul>
+<hr>
+<p>Back to <a href="00-start-here.html">Start Here</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fact-Check Everything — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html">Plan Your Year</a>
+<a href="03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html" class="active">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Fact-Check Everything</h1>
+<p><em>Summary: AI-generated text is confident even when wrong. Here's a 5-minute per-lesson verification routine that catches almost everything, without turning you into a full-time editor. Time to do: 5 minutes per lesson.</em></p>
+<h2>Why this chapter exists</h2>
+<p>A model will write "Harriet Tubman developed over 300 varieties of peanuts" with the same calm sentence rhythm it uses for true things. Trusting prose rhythm is the number-one way AI errors leak into homeschool materials — because an unverified, confidently-written fact <em>looks</em> like every verified fact. And once it's on a worksheet, it becomes "what my mom taught me."</p>
+<p>Two facts about the error pattern worth knowing up front:</p>
+<ol>
+<li>Models are <strong>worse at specifics</strong> (dates, numbers, names, quotes, statistics) than at processes and general concepts. "Why rain forms" reasoning is usually solid; the year the Kansas-Nebraska Act passed is a coin flip.
+</li>
+<li>Errors <strong>compound in generated material.</strong> If the model hallucinates early ("Tubman, born in 1720..."), everything after is built on it. Catch errors at generation time, not at dinner when your kid repeats them at Grammy's.
+</li>
+</ol>
+<h2>The triage table: what must be verified</h2>
+<p>Not everything needs the same care.</p>
+<table><thead><tr>
+<th>Content type</th>
+<th>Verify?</th>
+<th>How fast</th>
+</tr></thead><tbody>
+<tr>
+<td>Math arithmetic, steps ("how to regroup in column addition")</td>
+<td>Do the problems yourself</td>
+<td>30 sec</td>
+</tr>
+<tr>
+<td>Names, dates, inventions ("who invented the printing press")</td>
+<td><strong>Always</strong></td>
+<td>Book or 2 trusted sites, 2 min</td>
+</tr>
+<tr>
+<td>Quotes ("Einstein said ...")</td>
+<td><strong>Always</strong> — misquotes are rampant</td>
+<td>Quote is real or delete, 2 min</td>
+</tr>
+<tr>
+<td>Statistics ("60% of farms in 1800s...")</td>
+<td><strong>Always</strong>, and cite a source on the sheet</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>Definitions ("what's a serif?")</td>
+<td>Usually fine; spot-check if unusual</td>
+<td>1 min</td>
+</tr>
+<tr>
+<td>Step-by-step how-tos (experiment setup, craft)</td>
+<td>Check safety + physics</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>Discussion prompts, opinions, essay structure</td>
+<td>No — no facts to check</td>
+<td>0 min</td>
+</tr>
+</tbody></table>
+<h2>Two ways to verify — pick your speed</h2>
+<p><strong>Fast path (most days).</strong> For each factual claim on the sheet: open a <em>known</em> reference — a real encyclopedia, your curriculum's own text, .gov or museum sites. Search "claim + correction?" doesn't work; search the claim itself, then read what a real source says. If names/dates disagree, <strong>the real source wins</strong>, every time. Then log it in your <code>fact-checks.md</code> (six words: "week 4, Rome dates — fixed"). Done.</p>
+<p><strong>Thorough path (new topic weeks).</strong> When you're teaching something well outside your own comfort zone, do the fact-check <em>before</em> generating materials, using the verification prompt (<a href="prompts/verification-pass.html">prompts/verification-pass.md</a>):</p>
+<ol>
+<li>Ask the model to <strong>list</strong> every factual claim it used, with a source it thinks it got each from. (Models sometimes invent sources; if it can't name one, treat the claim as unsourced.)
+</li>
+<li>Verify <em>each named source is real</em> — this catches a surprisingly large share of hallucinations, since fake sources are easier to spot than fake facts.
+</li>
+<li>Then, and only then, generate worksheets and reading passages.
+</li>
+</ol>
+<h2>Verification helpers the model can give you</h2>
+<p>Useful, verified-safe asks:</p>
+<ul>
+<li>"List every named entity in this text — person, place, date, number — so I can check them." (Cheap; makes the check mechanical.)
+</li>
+<li>"What's a common misconception people have here, and is anything in this text at risk of repeating it?"
+</li>
+<li>"Which claims here would change the lesson if they were wrong?" (Priorities your checking time.)
+</li>
+</ul>
+<p>Not useful, and a trap:</p>
+<ul>
+<li>"Is everything you wrote correct?" — models nearly always say yes.
+</li>
+<li>"Search and tell me." — early tools sometimes invented search results; newer ones do real searches but grab random pages. Trust the *page you open yourself*, not the model's summary of a page you haven't seen.
+</li>
+</ul>
+<h2>The sheet-level habit</h2>
+<p>For anything that stays on a worksheet, keep one line of provenance on the page itself. A footer like: <em>"Fact-checked against [source], [date]."</em> Chapter 06 suggests logging these in a <code>fact-checks.md</code> file per unit. It takes seconds, and it's exactly the kind of habit that makes a portfolio durable if anyone ever looks closely.</p>
+<h2>Failure modes to know</h2>
+<ul>
+<li><strong>Plausible-audio trap.</strong> A generated science explanation <em>sounds</em> right because it's fluent. Fluency is not evidence. Check the concept, not the vibe.
+</li>
+<li><strong>Outdated by design.</strong> Generated text may reflect a world that ended years ago ("free resources, current as of ..." with years you didn't mention). State laws, websites, and prices age badly.
+</li>
+<li><strong>Mixing up similar entities.</strong> Two people with the same fields, two treaties, two wars... this is the model's most common deep error and easy to miss because everything around it is right.
+</li>
+</ul>
+<p>The one-line culture of this chapter: <strong>fluent text is a rumor until you've seen a source.</strong> After your first month, checking quarterly is fine — but keep the footer habit.</p>
+<hr>
+<p>Next: <a href="06-portfolios-and-logs.html">Chapter 06 — Portfolios and Logs</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

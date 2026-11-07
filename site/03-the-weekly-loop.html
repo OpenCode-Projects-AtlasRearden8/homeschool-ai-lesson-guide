@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Weekly Loop — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="00-start-here.html">Start Here</a>
+<a href="01-principles.html">Principles</a>
+<a href="02-plan-your-year.html">Plan Your Year</a>
+<a href="03-the-weekly-loop.html" class="active">The Weekly Loop</a>
+<a href="04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>The Weekly Loop</h1>
+<p><em>Summary: one 45-minute planning block each week that turns next week's row on the year plan into actual, printable, differentiated materials. Time to do: 45 minutes per week, forever after.</em></p>
+<h2>Why a loop and not per-day planning</h2>
+<p>Planning at the year level alone means every week you rediscover the assignment. Planning at the day level means you plan on the fly when you're tired and the lessons show it. The loop splits the difference: one sitting, weekly cadence, next week only.</p>
+<h2>The Sunday block, in five moves</h2>
+<p><strong>Move 1 — Read next week's row (5 min).</strong> Open your year plan. What's the focus topic per subject? Nothing else yet — just orient.</p>
+<p><strong>Move 2 — Generate lesson drafts (15 min).</strong> Use the weekly-plan prompt (<a href="prompts/weekly-plan.html">prompts/weekly-plan.md</a>). Feed it: the week's focus topics, each child's level, materials you actually have, minutes you actually want. Ask for 2 options per subject — options cost nothing and make choosing easier than creating.</p>
+<p>For unfamiliar topics, that's also your spot to start the fact-check pipeline from chapter 05 <em>before</em> materials get generated pre-filled with possibly wrong specifics. Verify first, generate later.</p>
+<p><strong>Move 3 — Differentiate (10 min).</strong> Pick one lesson per subject; ask the AI to produce it at each reading level your kids need (the worksheet chapter's workflow, <a href="04-differentiated-worksheets.html">04-differentiated-worksheets.md</a>). Three kids, three reading levels: this move makes it cheap.</p>
+<p><strong>Move 4 — Print and file (10 min).</strong> Print worksheets; put them in the kids' folders. Save AI outputs to your records folder under <code>weeks/week-NN/</code> (chapter 06 shows the whole tree). Never leave generated material <em>only</em> in a chat window — chat history gets lost and it's your portfolio evidence.</p>
+<p><strong>Move 5 — Write the week's log line (5 min).</strong> One sentence per kid per subject in the weekly log. That's it. Do it here; at 8 p.m. Sunday it's 5 minutes. Doing it Friday morning at 9 a.m. during chaos means it doesn't get done and your portfolio has a hole.</p>
+<h2>What gets generated, what doesn't</h2>
+<p>You do not need AI materials every lesson. A good week might use:</p>
+<table><thead><tr>
+<th>Subject</th>
+<th>Source of materials</th>
+<th>AI's role</th>
+</tr></thead><tbody>
+<tr>
+<td>Math</td>
+<td>Your curriculum worksheet (already good)</td>
+<td>none, or a reworded problem</td>
+</tr>
+<tr>
+<td>Science</td>
+<td>AI-generated experiment sheet</td>
+<td>generate + fact-check</td>
+</tr>
+<tr>
+<td>Reading</td>
+<td>Library books / reader</td>
+<td>reading-level questions only</td>
+</tr>
+<tr>
+<td>History</td>
+<td>Your spine book</td>
+<td>discussion prompts</td>
+</tr>
+<tr>
+<td>Writing/penmanship</td>
+<td>Handwritten by kids in a notebook</td>
+<td>topic suggestions</td>
+</tr>
+</tbody></table>
+<p>The loop's job is to make this triangle-of-purpose true for your week, quickly — not to fill it with generated worksheets everywhere, which is expensive to fact-check and honestly worse for most kids.</p>
+<h2>Tuesday failures and the 10-minute rescue</h2>
+<p>The plan will collide with life. When a day goes sideways:</p>
+<ol>
+<li><strong>Rescue, don't catch up.</strong> Pick one subject, keep it, drop the rest for the day. Log it honestly ("short day; two subjects").
+</li>
+<li><strong>Swap, don't stack.</strong> Move the missed lesson into next week's row and delete whatever's lightest there. Stacking catch-up work is how plans die.
+</li>
+<li><strong>Regenerate one replacement.</strong> If a planned activity was impossible (messy experiment, sick kid), ask the AI for a quieter/shorter variant in the same topic. Chapter 10 has the prompts for this.
+</li>
+</ol>
+<p>The log line is your friend here too: weeks that look like disasters moment-to-moment often log as "did 80%," and nobody reading the portfolio in a year will see the difference.</p>
+<h2>When you fell behind the year plan</h2>
+<p>Happens to everybody. Three options, in order of healthiness:</p>
+<ul>
+<li><strong>Slide the rest of the plan.</strong> Shift all remaining rows by a week or two. Easy: the plan is your file; you own it.
+</li>
+<li><strong>Compress favorite topics.</strong> Some units finish at 60% and are still fine.
+</li>
+<li><strong>Use buffer weeks.</strong> If you built buffer weeks in chapter 02, spend them.
+</li>
+</ul>
+<p>Tell the AI what happened ("we're two weeks behind on history; here's the rest of my plan; propose two shapes for finishing by June") — this is the exact kind of constraint-solving a model is good at, and it's a legitimate use of your 45 minutes.</p>
+<hr>
+<p>Next: <a href="04-differentiated-worksheets.html">Chapter 04 — Differentiated Worksheets</a></p>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt: Rewrite at a Reading Level — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="../index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="../00-start-here.html">Start Here</a>
+<a href="../01-principles.html">Principles</a>
+<a href="../02-plan-your-year.html">Plan Your Year</a>
+<a href="../03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="../04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="../05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="../06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="../07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="../08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="../09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="../10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="../prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="../prompts/rewrite-reading-level.html" class="active">Prompt: Rewrite at a Reading Level</a>
+<a href="../prompts/state-paperwork-assistant.html">Prompt: State Paperwork Lookup Assistant</a>
+<a href="../prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="../prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="../prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="../prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="../prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="../templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="../templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="../templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="../templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="../templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Prompt: Rewrite at a Reading Level</h1>
+<p><em>Category: materials · Use: any text that needs to move up or down a band · Pairs with: chapter 04.</em></p>
+<h2>When to use instead of the three-worksheets prompt</h2>
+<p>This one-off version is for single passages: a paragraph from your spine book, an explanation that landed badly, a letter to a co-op group with mixed adult reading levels. The full prompt handles whole worksheets.</p>
+<h2>Paste this prompt</h2>
+<pre><code>Rewrite this passage for a [band: emerging / decoding / confident / advanced]
+reader. Same facts, nothing added, nothing dropped, no simplification that
+changes meaning.
+
+Rules:
+- [Band-specific constraints, e.g., for emerging: &quot;sentences of 8 words max,
+  one idea per line, every hard word gets a one-clause definition where it
+  first appears&quot;]
+- Keep the original&#x27;s key vocabulary words bolded so I can see targets.
+- If any claim in the passage is factual and looks shaky, list it at the end
+  under &quot;VERIFY&quot; rather than restating it as settled fact.
+- End with a two-line note: what you changed and why, so I can check
+  you didn&#x27;t change meaning.
+
+Passage:
+[PASTE TEXT]</code></pre>
+<h2>Reading the output</h2>
+<ul>
+<li><strong>Changed meaning?</strong> The two-line note at the end is where sneaky changes announce themselves. Compare it against your original — that's the whole value of the note, and it's why the prompt requires it.
+</li>
+<li><strong>Typography</strong> matters more than wording for emerging readers: big font, short lines. Most formatting is your print dialog, not the model.
+</li>
+<li><strong>Too flat?</strong> Lower-band rewrites can read like GLMs reading rules aloud — ask for "vary sentence openers" as a one-line follow-up.
+</li>
+</ul>
+<h2>Band constraints cheat sheet</h2>
+<table><thead><tr>
+<th>Band ask</th>
+<th>Sentence length</th>
+<th>Extras to request</th>
+</tr></thead><tbody>
+<tr>
+<td>Emerging</td>
+<td>≤ 8 words</td>
+<td>definitions inline; one idea per line</td>
+</tr>
+<tr>
+<td>Decoding</td>
+<td>≤ 12 words</td>
+<td>consistent question patterns; no nested clauses</td>
+</tr>
+<tr>
+<td>Confident</td>
+<td>≤ 20 words</td>
+<td>connective variety; real "why" questions</td>
+</tr>
+<tr>
+<td>Advanced</td>
+<td>natural</td>
+<td>primary-source texture; inference prompts</td>
+</tr>
+</tbody></table>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>

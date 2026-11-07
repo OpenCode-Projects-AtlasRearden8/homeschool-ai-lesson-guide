@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt: State Paperwork Lookup Assistant — The Homeschool AI Lesson Guide</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="layout">
+<nav class="sidebar" aria-label="Chapters">
+  <div class="brand"><a href="../index.html">The Homeschool AI Lesson Guide</a></div>
+  <h2 class="navhead">The manual</h2>
+<a href="../00-start-here.html">Start Here</a>
+<a href="../01-principles.html">Principles</a>
+<a href="../02-plan-your-year.html">Plan Your Year</a>
+<a href="../03-the-weekly-loop.html">The Weekly Loop</a>
+<a href="../04-differentiated-worksheets.html">Differentiated Worksheets</a>
+<a href="../05-fact-check-everything.html">Fact-Check Everything</a>
+<a href="../06-portfolios-and-logs.html">Portfolios and Logs</a>
+<a href="../07-state-paperwork.html">State Paperwork — Informationally, Never Legal Advice</a>
+<a href="../08-privacy-and-local-ai.html">Privacy and Local AI</a>
+<a href="../09-low-energy-and-accommodations.html">Low Energy and Accommodations</a>
+<a href="../10-troubleshooting.html">Troubleshooting</a>
+<h2 class="navhead">Prompts</h2>
+<a href="../prompts/portfolio-summaries.html">Prompt: Portfolio and Log Summaries</a>
+<a href="../prompts/rewrite-reading-level.html">Prompt: Rewrite at a Reading Level</a>
+<a href="../prompts/state-paperwork-assistant.html" class="active">Prompt: State Paperwork Lookup Assistant</a>
+<a href="../prompts/topic-rescue.html">Prompt: Topic Rescue</a>
+<a href="../prompts/verification-pass.html">Prompt: Verification Pass</a>
+<a href="../prompts/weekly-plan.html">Prompt: The Weekly Plan</a>
+<a href="../prompts/worksheet-three-levels.html">Prompt: Three Worksheets, One Lesson</a>
+<a href="../prompts/year-plan.html">Prompt: Build a Year Plan</a>
+<h2 class="navhead">Templates</h2>
+<a href="../templates/accommodations-notes.html">Accommodations Notes — [child descriptor]</a>
+<a href="../templates/portfolio-index.html">Portfolio Index — [year]</a>
+<a href="../templates/state-paperwork-checklist.html">State Paperwork Checklist — [STATE]</a>
+<a href="../templates/weekly-log.html">Weekly Log — 2026-2027</a>
+<a href="../templates/year-plan.html">Year Plan — 2026-2027</a>
+</nav>
+<main class="content">
+<h1>Prompt: State Paperwork Lookup Assistant</h1>
+<p><em>Category: records/compliance · Use: once per year + on moves · Pairs with: chapter 07 — READ FIRST.</em></p>
+<h2>The warning, again, in one line</h2>
+<p>This prompt is for turning an <strong>official page you already found</strong> into planner-ready sentences. It never answers "what does my state require" by itself — chapter 07 explains why that's the dangerous question.</p>
+<h2>Step 1 (you, 15 minutes): find the official page</h2>
+<p>Search, in this order: your state's Department of Education homeschooling page → your state's compulsory-attendance law → a state homeschool association. Bookmark the DOE page. You will fill the checklist from it.</p>
+<h2>Paste this prompt (after Step 1)</h2>
+<pre><code>You are helping me make a homeschool paperwork checklist from MY OWN STATE&#x27;S
+official requirements text, which I am pasting below from
+[SOURCE, e.g., &quot;our DOE website page X&quot;]. Do not add requirements from your
+training data. If the pasted text doesn&#x27;t answer a question, say so — write
+&quot;NOT STATED IN PROVIDED TEXT.&quot;
+
+OFFICIAL TEXT:
+[PASTE THE DOE PAGE TEXT OR THE STATUTE SECTION]
+
+Produce:
+1. A digest of exactly what is required: notification, who may teach,
+   required subjects, days/hours, records, assessments, penalties-shaped
+   information, re-enrollment notes — ONLY what appears above.
+2. Plain-English explanation of each requirement, one sentence each.
+3. A list of things parents commonly worry about that this text does NOT
+   mention (&quot;NOT REQUIRED per provided text&quot;). I will double-check these
+   against the source before trusting the absence.
+4. A short list of exact phrases from the text I should quote in my own
+   checklist, so my file has provenance.</code></pre>
+<h2>Step 3 (you, 10 minutes): reconcile</h2>
+<p>Fill in your <a href="../templates/state-paperwork-checklist.html">templates/state-paperwork-checklist.md</a> with the digest — but every row gets its source quote pasted next to it. Anything in the "NOT REQUIRED" section deserves a skeptical look at the actual page before you relax.</p>
+<h2>What this prompt does NOT do</h2>
+<ul>
+<li>It does not interpret ambiguity ("does this mean I must...?"). For real ambiguity: call your state DOE's homeschool contact. Phone beats guessing.
+</li>
+<li>It does not settle legality anywhere. Chapter 07's professional list covers the situations where it can't help and a human must.
+</li>
+<li>It does not replace the annual re-check. Laws and pages change; the calendar reminder is your friend.
+</li>
+</ul>
+<footer class="site-footer">The Homeschool AI Lesson Guide — by Asdale Dynamics, LLC. Educational information only; never legal advice. MIT licensed — see LICENSE.</footer>
+</main>
+</div>
+</body>
+</html>
